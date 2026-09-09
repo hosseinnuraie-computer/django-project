@@ -1,0 +1,9 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Post Detail{% endblock %}
+
+{% block content %}
+    <h1>Viewing post #{{ post_id }} via GET</h1>
+    <p>This is a detailed view of a blog post.</p>
+    <a href="{% url 'core:home' %}">Back to home</a>
+{% endblock %}
